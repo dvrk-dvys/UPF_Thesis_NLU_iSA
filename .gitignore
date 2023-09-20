@@ -5,6 +5,7 @@
 *.zip
 *.flac
 *.xml
+*.pkl
 
 
 # Byte-compiled / optimized / DLL files
