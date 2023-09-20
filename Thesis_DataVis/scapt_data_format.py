@@ -20,8 +20,8 @@ import traceback
 import logging
 
 # ~~~~~~~~~~~~~~~~~~~~~~ local ~~~~~~~~~~~~~~~~~~~~~~
-import model_dir.pretrain.aspect_finetune as aspect_eval
-from model_dir.train.model import build_absa_model, build_optimizer, LabelSmoothLoss
+import train.trainer.aspect_finetune as aspect_eval
+from train.model import build_absa_model, build_optimizer, LabelSmoothLoss
 import argparse
 
 from transformers import BertTokenizer, pipeline
@@ -41,10 +41,10 @@ import colorama
 from colorama import Fore, Back, Style
 
 import argparse as args
-from model_dir.train.trainer import train
+from train.train import train
 
 import shap
-from model_dir.pretrain.pretrain import pretrain_Lite, ABSADataset, create_dataloader #,fp16_multi_pretrain
+from train.trainer.pretrain import pretrain_Lite, ABSADataset, create_dataloader #,fp16_multi_pretrain
 
 def load_jsonl(path):
     data = []

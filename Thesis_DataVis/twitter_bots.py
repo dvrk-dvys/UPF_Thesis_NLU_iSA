@@ -427,7 +427,7 @@ def cleaner(input_path, output_path):
     re_list = ['@[A-Za-z0–9_]+', '#']
     combined_re = re.compile( '|'.join( re_list) )
     # for clean_prep in twitter_stream.listener.extended_text:
-    with open('dataset/coronavirus_covid_omicorn_ukraine_russia_poland.jsonl') as f:
+    with open('./data/coronavirus_covid_omicorn_ukraine_russia_poland.jsonl') as f:
         line_prep = f.read().splitlines()
     clean_prep = []
     for line in line_prep:

@@ -2,7 +2,7 @@ import argparse
 
 import yaml
 
-from train.train import train
+from model_dir.train.trainer import train
 
 parser = argparse.ArgumentParser(description='Train model')
 parser.add_argument('--config', required=True, help='path to yaml config file')

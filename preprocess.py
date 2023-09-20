@@ -1,6 +1,6 @@
 import argparse
 import yaml
-from preprocess.process import preprocess
+from preprocessor.process import preprocess
 
 parser = argparse.ArgumentParser(description='Preprocess')
 parser.add_argument('--config', required=True, help='path to yaml config file')
